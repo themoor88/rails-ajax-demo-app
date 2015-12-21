@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
-  
+  # Basic CRUD actions that find the specific product.
+  # One more method that rendered the delete modal was necessary.
+
   def index
     @products = Product.all
   end
@@ -24,7 +26,7 @@ class ProductsController < ApplicationController
   def update
     @products = Product.all
     @product = Product.find(params[:id])
-    
+
     @product.update_attributes(product_params)
   end
 

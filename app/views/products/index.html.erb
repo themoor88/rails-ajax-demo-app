@@ -1,9 +1,10 @@
 <div class="container">
   <div class="well">
+    <!-- Remote true automatically tells rails to go to the new action and execute a js.erb file. -->
     <%= link_to "New Product", new_product_path, remote: true, class: "btn btn-primary" %>
   </div>
   <div class="new-product"></div>
-  
+
   <table class="table table-bordered table-striped">
     <thead>
       <tr>

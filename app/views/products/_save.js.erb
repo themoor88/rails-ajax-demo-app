@@ -1,3 +1,4 @@
+// Hide the modal and update the DOM full of the new products.
 $("ul.errors").html("")
 <% if @product.errors.any? %>
   <% @product.errors.full_messages.each do |message| %>
